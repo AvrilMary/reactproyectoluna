@@ -7,6 +7,761 @@
   pointer-events: none;
 }
 
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  background: #fefae0
+}
+
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
+nav {
+  font-family: 'Poppins', sans-serif;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 25px 0;
+}
+
+
+img {
+  width: 100%;
+  max-height: 100%;
+}
+
+figure {
+  margin-bottom: 1%;
+}
+
+/*--------Base Header - Footer styles -------*/
+
+header  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #283618;
+}
+
+
+/* Precicle logo */
+
+header figure {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation Bar */
+
+.menu-bar {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap; 
+  font-size: 1em;
+  font-weight: 500;
+}
+
+header nav ul {
+  display: flex;
+  justify-content:space-around;
+  flex-flow: row wrap;
+  width: 10%;
+  padding: 0;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+
+/*--------Footer styles -------*/
+
+footer {
+  background: #fefae0;
+  width: 100%;
+}
+
+
+footer .content-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+footer .social-icons {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display:flex;
+  justify-content: space-around; 
+  align-items: center;
+}
+
+footer .contact p {
+  margin-bottom: 35px;
+}
+
+footer .social-icons i {
+  border-radius: 30px;
+  width: 2.25em;
+  height: 2.25em;
+  background: #bc6c25;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
+
+/*-------- Home Page --------*/
+
+.image-slider {
+  display: flex;
+  justify-content: center;  
+  background: #283618;
+  max-height: 500px;
+  margin: 0;
+}
+
+.retreat-images {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  margin: 0 10% 0 10%;
+}
+
+#left-arrow {
+  margin-left: 15%;
+  margin-right: 3%;
+}
+
+#right-arrow {
+  margin-right: 15%;
+  margin-left: 3%;
+}
+
+.fas {
+  width: 10%;
+  font-size: 1em;
+  color: white;
+  justify-content: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+
+  /* Sign up form designs */
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #606c38;
+}
+
+.form input {
+  margin: 5px 0 5px 0;
+}
+
+
+aside .form {
+  margin-top: 10px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 90%;
+  color: #040e0a;
+  font-style: italic;
+  padding: 1em;
+
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #283618;
+  font-family: 'Poppins', Helvetica, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+  /* Features design styles */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url('../img/features-background-image.jpg') center no-repeat #333;
+  background-size: cover;
+  color: white;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.features p {
+  margin: 0px 0;
+}
+
+.features article {
+  width: 60%;
+  text-align: center;
+  margin: 30px 0;
+}
+
+  /* Review design styles */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #606c38;
+}
+
+.reviews h2 {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 15px 0 10px 0;
+}
+
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #2a423a;
+}
+.contact-content p, .contact-content h4 {
+  margin: 10px 0;
+}
+
+.map .content-wrapper {
+  margin: 0px 0;
+  width: 100%;
+  max-width: none;
+}
+
+
+/* ==========================================================================
+   Contact Page
+   ========================================================================== */
+
+#contact .content-wrapper {
+ margin-left: 5%;
+ margin-right: 5%;
+}
+
+.formButtons {
+  margin: 1% 0%;
+}
+
+.sendEmail:hover {
+  background-color: #606c38;
+  color: white;
+}
+
+
+.sendEmail {
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 281px) {
+  /*Tablet styles here*/
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+}
+
+ @media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+
+/*--------Font styles -------*/
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.33;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 0.875em,
+}
+
+.arrows {
+  font-size: 2em;
+}
+
+.form-description p {
+  font-size: 1.2em;
+}
+
+.form {
+  font-size: 1.2em;
+};
+
+
+/*--------Need to change arrows (make bigger, margin), footer -------*/
+
+
+  /*--------Base styles -------*/
+
+.content-wrapper {
+  max-width: 640px;
+  margin: 75px 0;
+}
+
+
+/*--------Header styles -------*/
+header {
+display: flex;
+justify-content: space-around;
+
+}
+
+header figure {
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+/*---------- Nav bar --------- */
+
+.menu-bar {
+display: none;
+}
+
+header nav {
+width: 100%;
+display: flex;
+flex: row;
+font-weight: 600;
+}
+
+
+.hide {
+display: contents;
+}
+
+header nav ul {
+justify-content: space-between;
+font-size: 1.40em;
+width: 90%
+}
+
+.fa-bars {
+display: none;
+}
+
+
+
+/*--------Footer styles -------*/
+
+
+footer .footer-content {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 15px 0;
+}
+
+footer .content-wrapper {
+margin-top: 2%;
+}
+
+.contact {
+margin-right: 10%;
+}
+
+.social {
+margin-left: 10%;
+}
+
+footer .social-icons i {
+margin: 0 10px;
+}
+
+footer h4 {
+padding-bottom: 15px;
+}
+
+
+
+
+/*--------Aside styles Homepage -------*/
+
+aside .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+aside .content-wrapper .form-description , 
+aside .content-wrapper .form {
+width: 45%;
+margin: 0;
+}
+
+
+/*--------Hero Area styles Homepage-------*/
+
+.hero-area {
+min-height: 590px;
+}
+
+
+/*--------Feature content styles Homepage-------*/
+
+.features article {
+display:flex;
+justify-content: center;
+align-items: center;
+flex-flow: column wrap;
+flex-basis: 50%;
+}
+
+.features .features-item-description {
+width: 62%;
+}
+
+.features i {
+font-size: 4.5em;
+}
+
+/*--------Review content styles Homepage-------*/
+
+.reviews .review-content article {
+display: flex;
+flex-flow: row wrap;
+width: 55%;
+margin-left: 20px;
+}
+
+.review-content {
+display: flex;
+flex-flow: row wrap;
+}
+
+.reviews h2 {
+line-height: 1;
+width: 55%;
+}
+
+.reviews h3 {
+width: 70%;
+margin: 0px 0;
+}
+
+.reviews figure {
+width: 40%;
+display: flex;
+align-items: center;
+}
+
+.reviews p {
+margin: 0px 0;
+}
+
+/*--------Mission content styles Aboutpage-------*/
+
+.content-wrapper .mission-content{
+display:flex;
+justify-content: space-between;
+flex-flow: row wrap;
+}
+
+.mission-content p {
+width: 45%;
+}
+
+
+/*-------Contact Page-------*/
+
+.formButtons {
+padding: 1.5%;
+}
+
+
+
+
+
+
+}
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+
+/*--------Font styles -------*/
+
+h1 {
+  font-size: 3.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3, h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.3333;
+}
+
+header nav ul {
+  justify-content: space-between;
+  font-size: 1.75em;
+  width: 90%
+}
+
+/*-----Base styles-*/  
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 50px 0;
+}
+
+/*-----Header styles-*/ 
+
+header figure {
+  display: flex;
+  justify-content: center; 
+}
+
+
+
+/*----FOOTER styles-------*/
+
+footer .content-wrapper {
+padding-top: 25px;
+max-width: 800px;
+margin: auto;
+}
+
+
+footer h4 {
+font-size: 1.875em;
+}
+
+  /*-----Aside styles HOMEPAGE--------*/
+
+aside .content-wrapper {
+width: 800px;
+display: flex;
+flex-flow: column reverse wrap;
+justify-content: space-between;
+}
+
+aside .content-wrapper .form-description , 
+aside .content-wrapper .form {
+display: flex;
+flex-flow: column wrap;
+margin: 0;
+}
+
+.form-description p {
+font-size: 1.125em;
+}
+
+input[type=text] {
+width: 100%;
+}
+
+input[type=button] {
+font-size: 1.5em;
+}
+
+/*----Hero Area styles HOMEPAGE-------*/
+
+.hero-area {
+min-height: 615px;
+}
+
+  /*----Feature styles HOMEPAGE-------*/
+
+.features-items {
+display: flex;
+flex-flow: column-reverse wrap;
+}
+
+.features article {
+display:flex;
+flex-basis: 33%;
+}
+
+  /*----REVIEW styles HOMEPAGE-------*/
+
+.reviews .review-content article {
+display: flex;
+flex-flow: row wrap;
+width: 40%;
+margin-top:  1%;
+}
+
+.review-content {
+display: flex;
+flex-flow: row wrap;
+}
+
+.reviews h2 {
+line-height: 1;
+width: 75%;
+margin-bottom: 40px;
+}
+
+.reviews figure {
+width: 40%;
+display: flex;
+justify-content: center;
+margin-left: 0;
+}
+
+
+
+.general-information, .contact-support {
+width: 47%;
+}
+
+
+.mission h2,
+.contact-section .content-wrapper h2 {
+    width: 100%;
+    font-size: 3em;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
+}
+
+
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
