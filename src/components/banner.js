@@ -1,5 +1,6 @@
 import React from "react";
-//Import React Router Dom!!!
+import { Link} from "react-router-dom";
+import { FaAlignRight} from 'react-icons/fa'
 
 export default function Banner () {
     return (
@@ -11,19 +12,27 @@ export default function Banner () {
     
           <div className="menu-bar">
             <div className="hamburgerMenu">
-              <i className="fas fa-bars"></i>
+                <FaAlignRight className="fas fa-bars"/>
             </div>
             <div className="exitMenu hide">
-              <i className="fas fa-times"></i>
+                <FaAlignRight className="fas fa-times"/>
             </div>
           </div>
           <nav>
             <ul className="nav-list hide">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="nuestraHistoria/index.html">Nuestra Historia</a></li>
-              <li><a href="retreats/index.html">Retreats</a></li>
-              <li><a href="recursos/index.html">Recursos</a></li>
-              <li><a href="contacto/index.html">Contacto</a></li>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/nuestraHistoria">Nuestra Historia</Link>
+                </li>
+                <li>
+                    <Link to="/retreats">Retreats</Link>
+                </li>
+                <li>
+                    <Link to="/recursos">Recursos</Link>
+                </li>
+              
             </ul>
           </nav>
     </div>
