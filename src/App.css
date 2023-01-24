@@ -75,6 +75,59 @@ figure {
   margin-bottom: 1%;
 }
 
+/*--------Base Header - Footer styles -------*/
+
+header  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #283618;
+}
+
+
+/* Precicle logo */
+
+header figure {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation Bar */
+
+.menu-bar {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap; 
+  font-size: 1em;
+  font-weight: 500;
+}
+
+header nav ul {
+  display: flex;
+  justify-content:space-around;
+  flex-flow: row wrap;
+  width: 10%;
+  padding: 0;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+
 
 
 
