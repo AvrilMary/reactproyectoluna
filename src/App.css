@@ -209,7 +209,7 @@ footer .contact p {
   margin-bottom: 35px;
 }
 
-footer .social-icons i {
+.icons {
   border-radius: 30px;
   width: 2.25em;
   height: 2.25em;
@@ -219,6 +219,48 @@ footer .social-icons i {
   display: flex;
   
 }
+
+ /* Sign up form designs */
+ aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #606c38;
+}
+
+.form input {
+  margin: 5px 0 5px 0;
+}
+
+
+aside .form {
+  margin-top: 10px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 90%;
+  color: #040e0a;
+  font-style: italic;
+  padding: 1em;
+
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #283618;
+  font-family: 'Poppins', Helvetica, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 
 
@@ -280,6 +322,23 @@ header nav ul {
   width: 90%
 }
 
+
+ /*--------Aside styles Homepage -------*/
+
+ aside .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+aside .content-wrapper .form-description , 
+aside .content-wrapper .form {
+width: 45%;
+margin: 0;
+}
+
+
 /*--------Footer styles -------*/
 
 
@@ -302,14 +361,13 @@ footer .content-wrapper {
   margin-left: 10%;
 }
 
-footer .social-icons i {
+.icons  {
   margin: 0 10px;
 }
 
 footer h4 {
   padding-bottom: 15px;
 }
-
 
 }
 
