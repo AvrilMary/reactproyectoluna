@@ -1,7 +1,7 @@
 import React, { Component} from "react";
 import { FaAlignJustify } from 'react-icons/fa';
 import { Link} from "react-router-dom";
-import Logo from "./logo";
+import Logo from "./logo.js";
 
 
 export default class NavBar extends Component {
@@ -17,7 +17,6 @@ export default class NavBar extends Component {
     return (
        <header>
          <div className="content-wrapper">
-
             <Logo/>
                   <div className="menu-bar">
                     <button type="button "className="nav-btn" onClick= {this.handleToggle}>
@@ -42,12 +41,8 @@ export default class NavBar extends Component {
                       
                     </ul>
                   </nav>
-        
                   </div>
-
        </header>
-       
-     
             );
         }
 
