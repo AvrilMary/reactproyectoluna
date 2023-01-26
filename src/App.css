@@ -177,6 +177,49 @@ header nav ul {
   margin-left: 3%;
 }
 
+/*--------Footer styles -------*/
+
+footer {
+  background: #fefae0;
+  width: 100%;
+}
+
+
+footer .content-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+footer .social-icons {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display:flex;
+  justify-content: space-around; 
+  align-items: center;
+}
+
+footer .contact p {
+  margin-bottom: 35px;
+}
+
+footer .social-icons i {
+  border-radius: 30px;
+  width: 2.25em;
+  height: 2.25em;
+  background: #bc6c25;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
+
 
 
 
@@ -237,7 +280,35 @@ header nav ul {
   width: 90%
 }
 
+/*--------Footer styles -------*/
 
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 0;
+}
+
+footer .content-wrapper {
+  margin-top: 2%;
+}
+
+.contact {
+  margin-right: 10%;
+}
+
+.social {
+  margin-left: 10%;
+}
+
+footer .social-icons i {
+  margin: 0 10px;
+}
+
+footer h4 {
+  padding-bottom: 15px;
+}
 
 
 }
