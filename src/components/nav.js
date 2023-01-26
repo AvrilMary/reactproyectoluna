@@ -1,7 +1,7 @@
 import React, { Component} from "react";
 import { FaAlignJustify } from 'react-icons/fa';
 import { Link} from "react-router-dom";
-import Logo from "./logo.js";
+import Logo from "./Logo.js";
 
 
 export default class NavBar extends Component {
@@ -24,7 +24,7 @@ export default class NavBar extends Component {
                     </button>
     
                   </div>
-                  <nav>
+                  <nav className="nav">
                     <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
                         <li>
                             <Link to="/">Home</Link>

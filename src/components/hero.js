@@ -10,8 +10,8 @@ export default function Hero() {
                 <div class="arrows" id="left-arrow">
                     <FaChevronCircleLeft/>
                 </div>
-            <figure className={image}>
-                <img class="img" src={image} alt=""/>
+            <figure>
+                <img className="retreatImage" src={image} alt=""/>
             </figure>
             <div class="arrows" id="right-arrow">
                 <FaChevronCircleRight/>

@@ -62,6 +62,7 @@ nav {
   cursor: pointer;
   outline: none;
   color: white;
+  font-size: 0.75em;
 }
 
 address {
@@ -79,8 +80,14 @@ img {
   max-height: 100%;
 }
 
+.retreatImage {
+  width: 100%;
+  max-height: 100%;
+}
+
+
 figure {
-  margin-bottom: 1%;
+  margin: 1% 0;
 }
 
 /*--------Base Header - Footer styles -------*/
@@ -125,7 +132,7 @@ header nav {
   height: 0;
   overflow: hidden;
   list-style-type: none;
-  width: 20%;
+  width: 30%;
 }
 
 header nav ul {
@@ -239,7 +246,6 @@ aside .form {
 }
 
 input[type=text] {
-  box-sizing: border-box;
   width: 90%;
   color: #040e0a;
   font-style: italic;
@@ -249,8 +255,7 @@ input[type=text] {
 
 input[type=button] {
   width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
+  padding: 0.75em;
   background-color: #283618;
   font-family: 'Poppins', Helvetica, Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -275,6 +280,7 @@ input[type=button] {
   header {
     display: flex;
     justify-content: space-around;
+    max-height: 400px;
     
   }
   
@@ -292,7 +298,7 @@ input[type=button] {
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
   .nav-links a {
     margin: 0 1rem;
@@ -308,19 +314,20 @@ input[type=button] {
   display: none;
 }
 
-header nav {
+.nav {
   width: 100%;
   display: flex;
-  flex: row;
   font-weight: 600;
 }
 
 
-header nav ul {
+.nav ul {
   justify-content: space-between;
+  flex-flow: row;
   font-size: 1.40em;
   width: 90%
 }
+
 
 
  /*--------Aside styles Homepage -------*/

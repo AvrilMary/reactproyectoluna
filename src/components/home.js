@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "./nav";
-import Hero from "./hero";
-import Form from "./form";
-import Footer from "./footer";
+import NavBar from "./Nav";
+import Hero from "./Hero";
+import Form from "./Form";
+import Footer from "./Footer";
 
 
 
