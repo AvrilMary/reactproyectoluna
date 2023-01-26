@@ -1,9 +1,12 @@
 import React from "react";
-import Banner from "./banner";
+import NavBar from "./nav";
+
 
 
 export default function Home () {
     return (
-        <Banner/>
+        <>
+         <NavBar/>
+        </>
     )
 }

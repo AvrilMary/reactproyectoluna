@@ -113,6 +113,13 @@ header nav {
   font-weight: 500;
 }
 
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  width: 20%;
+}
+
 header nav ul {
   display: flex;
   justify-content:space-around;
@@ -122,13 +129,72 @@ header nav ul {
 }
 
 
-.hide {
+.show-nav {
+  height: 100px;
+}
+
+
+@media screen and (min-width: 768px) {
+  
+  
+  /*--------Header styles -------*/
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  header figure {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+    margin-left: 4rem;
+  }
+  .nav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 75px 0;
+  }
+ 
+.menu-bar {
   display: none;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  flex: row;
+  font-weight: 600;
+}
+
+
+header nav ul {
+  justify-content: space-between;
+  font-size: 1.40em;
+  width: 90%
 }
 
 
 
 
+
+
+}
 
 
 
