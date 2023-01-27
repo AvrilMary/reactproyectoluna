@@ -5,7 +5,8 @@ import { FaInstagram } from 'react-icons/fa';
 
 export default function Footer () {
     return (
-        
+    <footer>
+
         <div class="content-wrapper">
           <div class="footer-content">
             <div class="contact">
@@ -42,6 +43,8 @@ export default function Footer () {
           </div>
 
         </div>
+
+    </footer>
         
     )
 };
