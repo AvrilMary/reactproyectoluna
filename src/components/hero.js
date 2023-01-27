@@ -1,21 +1,13 @@
 import React from "react";
-import { FaChevronCircleLeft } from 'react-icons/fa';
-import { FaChevronCircleRight } from 'react-icons/fa';
-import image from "./background-cover-image.jpg";
+import ImageSlider from './ImageSlider';
+import { SliderData } from './SliderData';
+
 
 export default function Hero() {
     return (
       <section >
-            <div className="heroBackground">
-                <div class="arrows" id="left-arrow">
-                    <FaChevronCircleLeft/>
-                </div>
-            <figure>
-                <img className="retreatImage" src={image} alt=""/>
-            </figure>
-            <div class="arrows" id="right-arrow">
-                <FaChevronCircleRight/>
-            </div>
+        <div className="heroBackground">
+            <ImageSlider slides={SliderData}/>;
         </div>
       </section>
     )
