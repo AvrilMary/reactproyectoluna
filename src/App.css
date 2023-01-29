@@ -256,7 +256,7 @@ footer .contact p {
 }
 
  /* Sign up form designs */
- aside {
+ .aside {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,7 +269,7 @@ footer .contact p {
 }
 
 
-aside .form {
+.aside .form {
   margin-top: 10px;
 }
 
@@ -359,7 +359,7 @@ input[type=button] {
 /* Hero Styles */
 
 .right-arrow {
-  right: 20px;
+  right: 40px;
   font-size: 3rem;
 }
 
@@ -368,19 +368,23 @@ input[type=button] {
   font-size: 3rem;
 }
 
+.image {
+  max-height: 60%;
+}
+
 
 
  /*--------Aside styles Homepage -------*/
 
- aside .content-wrapper {
+ .aside .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 50px 0;
 }
 
-aside .content-wrapper .form-description , 
-aside .content-wrapper .form {
+.aside .content-wrapper .form-description , 
+.aside .content-wrapper .form {
 width: 45%;
 margin: 0;
 }
