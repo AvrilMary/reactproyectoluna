@@ -5,12 +5,13 @@ import { useTranslation } from "react-i18next";
 
 const LanguageSelector = () => {
 
-  const {i18n} = useTranslation();
+  const {t, i18n} = useTranslation();
 
 
   const changeLanguage = (event) => {
 
     i18n.changeLanguage(event.target.value);
+    t(event.target.value);
 
 
   };
