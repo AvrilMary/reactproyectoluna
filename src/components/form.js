@@ -1,8 +1,10 @@
 import React from "react";
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 
-const Form =  ({t}) => {
+const Form = () => {
+    
+    const { t, i18n} = useTranslation();
 
     return (
 
@@ -24,4 +26,4 @@ const Form =  ({t}) => {
 
 }
 
-export default withTranslation()(Form);
+export default Form;
