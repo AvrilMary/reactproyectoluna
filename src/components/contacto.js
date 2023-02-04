@@ -11,10 +11,41 @@ class Contacto extends React.Component {
         message: ''
       }
     }
+    handleSubmit(e) {
+        e.preventDefault();
+  fetch('http://localhost:3002/send', {
+      method: "POST",
+      body: JSON.stringify(this.state),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+    }).then(
+    (response) => (response.json())
+      ).then((response)=> {
+    if (response.status === 'success') {
+      alert("Message Sent.");
+      this.resetForm()
+    } else if(response.status === 'fail') {
+      alert("Message failed to send.")
+    }
+  })
+    }
+    resetForm(){
+        this.setState({name: '', email: '', message: ''})
+      }
+
+
     render() {
       return(
         <>
         <NavBar/>
+        <div class="form-description">
+          <h3>Contacto</h3>
+          <h2 class="subtitles">¡Escribirnos!</h2>
+          <p class="contactDescription">Una pregunta o solicitud sobre los Retreats que ofrecemos...
+          </p>
+        </div>
         <div className="App">
           <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
             <div className="form-group">
@@ -44,26 +75,6 @@ class Contacto extends React.Component {
     }
     onMessageChange(event) {
       this.setState({message: event.target.value})
-    }
-    handleSubmit(e) {
-        e.preventDefault();
-  fetch('http://localhost:3002/send', {
-      method: "POST",
-      body: JSON.stringify(this.state),
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-    }).then(
-    (response) => (response.json())
-      ).then((response)=> {
-    if (response.status === 'success') {
-      alert("Message Sent.");
-      this.resetForm()
-    } else if(response.status === 'fail') {
-      alert("Message failed to send.")
-    }
-  })
     }
   }
   export default Contacto;
