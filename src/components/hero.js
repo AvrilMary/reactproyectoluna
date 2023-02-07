@@ -5,10 +5,8 @@ import { SliderData } from './SliderData';
 
 export default function Hero() {
     return (
-      <section className="heroBackground">
-        <div>
+        <div className="heroBackground">
             <ImageSlider slides={SliderData}/>;
         </div>
-      </section>
     )
   }

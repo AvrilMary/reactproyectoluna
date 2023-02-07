@@ -75,15 +75,12 @@ address {
 }
 
 
+
 img {
-  width: 100%;
-  max-height: 100%;
+  width: 70%;
+  max-height: 50%;
 }
 
-.retreatImage {
-  width: 100%;
-  max-height: 100%;
-}
 
 
 figure {
@@ -205,8 +202,9 @@ header nav ul {
 .heroBackground {
   justify-content: center;  
   background: #283618;
-  max-height: 500px;
+  max-height: 700px;
   margin: 0;
+  display: flex;
 }
 
 
@@ -368,8 +366,17 @@ input[type=button] {
   font-size: 3rem;
 }
 
+
 .image {
-  max-height: 60%;
+  max-height: 800px;
+  max-width: 1000px;
+}
+
+
+
+.slider {
+  max-height: 800px;
+  max-width: 1000px;
 }
 
 
