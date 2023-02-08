@@ -1,110 +1,41 @@
-import React, {useState} from "react";
-import PropTypes from "prop-types";
-import axios from "axios";
-import NavBar from "./Nav";
+import React from "react";
+import { useForm } from "react-hook-form";
 import Footer from "./Footer";
+import NavBar from "./Nav";
 
-/**
- * @component Form
- * @props - { object } -  config
- */
-const Form = (props) => {
-  const [mailSent, setmailSent] = useState(false);
-  const [error, setError] = useState(null);
-  const [formData, setFormData] = useState({});
- 
-  /**
-  * @function handleFormSubmit
-  * @param e { obj } - form event
-  * @return void
-  */
-  const handleFormSubmit = e => {
-    e.preventDefault();
-    axios({
-      method: "post",
-      url: `${process.env.REACT_APP_API}`,
-      headers: { "content-type": "application/json" },
-      data: formData
-    })
-      .then(result => {
-        if (result.data.sent) {
-          setmailSent(result.data.sent)
-          setError(false)
-        } else {
-          setError(true)
-        }
-      })
-      .catch(error => setError( error.message ));
-  };
-  /**
-    * @function handleChange
-    * @param e { obj } - change event
-    * @param field { string } - namve of the field
-    * @return void
-    */
-   const handleChange = (e, field) => {
-    let value = e.target.value;
-    setFormData({
-      ...formData,
-      [field]: value,
-    });
+
+export default function Contacto() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    console.log({ ...register("email") });
   };
 
-    const { title,description, successMessage, errorMessage, fieldsConfig } = props.config;
-    return (
-      <>
-      <NavBar/>
-       <div className="contact-form">
-        <div className="contact-form__header">
-            <h2>{title}</h2>
-            <p>{description}</p>
+  return (
+    <>
+    <NavBar/>
+    <div className="App">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="form-control">
+          <label>Email</label>
+          <input type="text" name="email" {...register("email")} />
         </div>
-      <div className="contact-form__container">
-        <div>
-          <form action="#">
-            {fieldsConfig &&
-              fieldsConfig.map(field => {
-                return (
-                  <React.Fragment key={field.id}>
-                    {field.type !== "textarea" ? (
-                      <React.Fragment>
-                        <label>{field.label}</label>
-                        <input
-                          type={field.type}
-                          className={field.klassName}
-                          placeholder={field.placeholder}
-                          value={field.name}
-                          onChange={e => handleChange(e, field.fieldName)}
-                        />
-                      </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <label>{field.label}</label>
-                        <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
-                      </React.Fragment>
-                    )}
-                  </React.Fragment>
-                );
-              })}
-            <input type="submit" onClick={e => handleFormSubmit(e)} value="Submit" />
-            <div>
-              {mailSent && <div className="sucsess">{successMessage}</div>}
-              {error && <div className="error">{errorMessage}</div>}
-            </div>
-          </form>
+        <div className="form-control">
+          <label>Password</label>
+          <input type="password" name="password" {...register("password")} />
         </div>
+        <div className="form-control">
+          <label></label>
+          <button type="submit">Login</button>
         </div>
-      </div>
-      <Footer/>
-      </>
-      
-    );
+      </form>
+    </div>
+    <Footer/>
+    </>
+  );
 }
-
-export default Form;
-//propTypes for the component
-Form.propTypes = {
-  config: PropTypes.object.isRequired
-};
-
-
