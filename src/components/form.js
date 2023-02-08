@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-
+/*
 const Form = () => {
     
     const { t, i18n} = useTranslation();
@@ -27,3 +27,5 @@ const Form = () => {
 }
 
 export default Form;
+
+*/
